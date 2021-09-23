@@ -1,6 +1,6 @@
 Prática 1
 
-* elemento He utilizado las siguientes etiquetas
+* He utilizado las siguientes etiquetas
 
 html
 body
