@@ -1,0 +1,655 @@
+<html>
+  <head>
+     <title>Ejercicio de Tablas</title>
+  </head>
+  <body>
+     <h1> Ejercicio de Tablas </h1>
+     <h3>1. Tabla de tablas  <h3>
+
+
+
+         <table border="1">
+         <tr>
+             <td>Celda</td>
+             <td>Celda</td>
+             <td>Celda</td>
+         </tr>
+         <tr>
+             <td>Celda</td>
+             <td>
+
+               <table border="1">
+               <tr>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+               </tr>
+               <tr>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+               </tr>
+               <tr>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+               </tr>
+               <tr>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+               </tr>
+             </table>
+
+             </td>
+             <td>Celda</td>
+         </tr>
+         <tr>
+             <td>Celda</td>
+             <td>
+               <table border="1">
+                 <tr>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                 </tr>
+                <tr>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                 </tr>
+                <tr>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                   <td>Celda</td>
+                 </tr>
+              </table>
+             </td>
+             <td>Celda</td>
+         </tr>
+       </table>
+
+        <h3>2. Tabla de tabla 2  <h3>
+
+          <table border="1">
+        <tr>
+          <td>Celda</td>
+          <td>Celda</td>
+          <td>Celda</td>
+          <td>Celda</td>
+        </tr>
+        <tr>
+          <td>Celda</td>
+          <td>Celda</td>
+          <td>Celda</td>
+          <td>Celda</td>
+        </tr>
+        <tr>
+          <td>Celda</td>
+          <td>Celda</td>
+          <td>Celda</td>
+          <td>Celda</td>
+        </tr>
+        <tr>
+          <td>Celda</td>
+          <td>
+        <table border="1">
+          <tr>
+            <td>Celda</td>
+            <td>Celda</td>
+          </tr>
+          <tr>
+            <td>Celda</td>
+            <td>Celda</td>
+          </tr>
+          <tr>
+         <td>Celda</td>
+         <td>Celda</td>
+          </tr>
+        </table>
+          </td>
+          <td>Celda</td>
+          <td>Celda</td>
+        </tr>
+          </table>
+
+        <h3> Tablas con celdas extendidas  <h3>
+
+          <table border="1">
+
+            <tr>
+              <td colspan="3">alfa</td>
+              <td>bravo</td>
+              <td rowspan="2">charlie</td>
+            </tr>
+            <tr>
+              <td>delta</td>
+              <td>echo</td>
+              <td>foxtrot</td>
+              <td>glof</td>
+            </tr>
+            <tr>
+              <td>hotel</td>
+              <td colspan="3" rowspan="2">india</td>
+              <td>juliet</td>
+            </tr>
+            <tr>
+              <td>kiko</td>
+              <td>lima</td>
+            </tr>
+            <tr>
+              <td>mike</td>
+              <td>november</td>
+              <td>oscar</td>
+              <td>papa</td>
+              <td>quebec</td>
+            </tr>
+          </table>
+
+
+          <h3> Basic HTML Table  <h3>
+            <table border="1">
+              <tr>
+                <td>Level 1</td>
+                <td colspan="3">Level 2</td>
+                <td colspan="3">Level 3</td>
+                <td colspan="3">Info</td>
+                <td>Name</td>
+              </tr>
+              <tr>
+                <td rowspan="6">System</td>
+                <td colspan="3"rowspan="4">System Apps</td>
+                <td colspan="3" rowspan="3">SystemEnv</td>
+                <td>APP test</td>
+
+              </tr>
+              <tr>
+                <td colspan="3">APP Memory</td>
+                  <td>foo</td>
+            </tr>
+            <tr>
+              <td colspan="3">APP test</td>
+              <td>foo</td>
+            </tr>
+          <tr>
+          <td colspan="3" rowspan="2">MemeoryTest</td>
+              <td colspan="3">APP test</td>
+              <td>foo</td>
+        </tr>
+
+        <tr>
+        <td colspan="3" rowspan="2">System Memory</td>
+        <td colspan="3">Memory Func</td>
+          <td>foo</td>
+        </tr>
+
+        <tr>
+          <td colspan="3">SystemEnv2</td>
+            <td>Apes test</td>
+        </tr>
+
+            </table>
+
+
+            <h1> Resultados Globales </h1>
+
+            <style>
+            #tabla5 {
+                padding: 0.5em;
+                border: 1px solid rgba(0,0,0,0.2);
+}
+
+            </style>
+
+            <table border="1" id=tabla5>
+              <tr>
+                <th colspan="4">Curso 2019/2020</th>
+
+              </tr>
+
+
+                <tr>
+                  <th colspan="2"> 1º ESO - A</th>
+                  <th colspan="2"> 1º ESO - B</th>
+
+                </tr>
+
+
+                  <tr>
+                    <td>Aprobados</td>
+                    <td>Suspensos</td>
+                    <td>Aprobados</td>
+                    <td>Suspensos</td>
+
+                  </tr>
+
+
+                    <tr>
+                      <td>68 %</td>
+                      <td>57 %</td>
+                      <td>32 %</td>
+                      <td>43 %</td>
+
+                    </tr>
+                  </table>
+
+
+            <h2> Estilo 1 </h2>
+            <style>
+            #tabla6{
+              border: 1px solid #ddd;
+              text-align: left;
+            }
+            #tabla6 {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            #tabla6 {
+              padding: 15px;
+            }
+            </style>
+            <table border="1" id=tabla6>
+              <tr>
+                <td>Aprobados</td>
+                <td>Suspensos</td>
+                <td>Aprobados</td>
+                <td>Suspensos</td>
+
+              </tr>
+              <tr>
+                <td>Aprobados</td>
+                <td>Suspensos</td>
+                <td>Aprobados</td>
+                <td>Suspensos</td>
+
+              </tr>
+              <tr>
+                <td>Aprobados</td>
+                <td>Suspensos</td>
+                <td>Aprobados</td>
+                <td>Suspensos</td>
+
+              </tr>
+              <tr>
+                <td>Aprobados</td>
+                <td>Suspensos</td>
+                <td>Aprobados</td>
+                <td>Suspensos</td>
+
+              </tr>
+
+            </table>
+
+
+            <h2> Estilo 2 </h2>
+            <style>
+            #tabla7{
+              border-collapse: collapse;
+              width: 100%;
+            }
+            #tabla7{
+              padding: 8px;
+              text-align: left;
+              border-bottom: 1px solid #ddd;
+            }
+            </style>
+            <table border="1" id=tabla7>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+                <td>Adios</td>
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+                <td>Adios</td>
+
+              </tr>
+
+            </table>
+
+            <h2> Estilo 3 </h2>
+            <style>
+            #tabla8 {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            #tabla8{
+              text-align: left;
+              padding: 8px;
+            }
+            #tabla8:hover {background-color: yellow;}
+            </style>
+            <table border="1" id=tabla8>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+                <td>Adios</td>
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+                <td>Adios</td>
+
+              </tr>
+
+            </table>
+
+            <h2> Estilo 4 </h2>
+            <style>
+            #tabla9 {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            #tabla9 {
+              text-align: left;
+              padding: 8px;
+            }
+            #tabla10:nth-child(even) {background-color: #f2f2f2;}
+            </style>
+            <table border="1" id=tabla9>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+
+            </table>
+
+            <h2> Estilo 5 </h2>
+            <style>
+            #tabla10 {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            #tabla10 {
+              text-align: left;
+              padding: 8px;
+            }
+            #tabla10:nth-child(even){background-color: #f2f2f2}
+            #tabla10 {
+              background-color: #04AA6D;
+              color: white;
+            }
+            </style>
+            <table border="1" id=tabla10>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+
+            </table>
+
+
+            <h2> Estilo 6 </h2>
+            <style>
+            #tabla11 {
+              width: 100%;
+            }
+            #tabla11 {
+              height: 70px;
+            }
+
+            </style>
+            <table border="1" id=tabla11>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+
+            </table>
+
+            <h2> Estilo 7 </h2>
+            <style>
+            #tabla12 {
+              width: 50%;
+            }
+            </style>
+            <table border="1" id=tabla12>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+
+            </table>
+
+            <h2> Estilo 8 </h2>
+            <style>
+            #tabla13{
+   border: 1px solid black;
+      }
+            </style>
+            <table border="1" id=tabla13>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+
+            </table>
+
+            <h2> Estilo 9 </h2>
+            <style>
+            #tabla14 {
+              width: 100%;
+              border-collapse: collapse;
+            }
+            </style>
+            <table border="1" id=tabla14>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+
+            </table>
+
+            <h2> Estilo 10 </h2>
+            <style>
+            #tabla15{
+              text-align: center;
+            }
+
+            </style>
+            <table border="1" id=tabla15>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+
+            </table>
+
+            <h2> Ultimo estilo </h2>
+            <style>
+            #tabla15{
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+              text-align: center;
+            }
+
+            </style>
+            <table border="1" id=tabla15>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+              </tr>
+              <tr>
+                <td>Hola</td>
+                <td>Adios</td>
+
+
+              </tr>
+
+            </table>
+  </body>
+</html>
