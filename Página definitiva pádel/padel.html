@@ -1,0 +1,163 @@
+<html>
+  <html>
+    <head>
+      <link rel="shortcut icon" href="https://d-padel.com/media/catalog/product/cache/06d0b44e666b0fc631d1c8cca5c5318e/c/a/ca63007c839945248c6b50abc09575ce_60fe83a872b08.png">
+      <h1 style="color: purple;"> PADEL TIME </h1> <img src="img/logo.PNG" alt="Palas" style="width:200px;height:100px;color;" > <aling:"top"></aling:>
+                    <!-- Required meta tags -->
+                     <meta charset="utf-8">
+                     <meta name="viewport" content="width=device-width, initial-scale=1">
+                     <link rel="stylesheet" type="text/css" href="estilo padel.css">
+                     
+                
+                     <!-- Bootstrap CSS -->
+                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+                     <title style="color: purple;">PADEL TIME</title>
+                    
+    </head>
+    <body style="background-image: url(https://img.freepik.com/vector-gratis/diseno-fondo-blanco-estilo-perspectiva-3d-forma-hexagonal_1017-27558.jpg?size=626&ext=jpg);">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="padel.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="palas.html">Palas</a>
+                  </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="ropa.html">Ropa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="accesorios.html">Accesorios</a>
+                  </li>
+                  
+            </ul>
+          </div>
+        </nav>
+        
+</style>
+  </head>
+<body>
+     <style>
+     table, th, td {
+     border: 1px solid white;
+     border-collapse: collapse;
+     text-align:center;
+   }
+   th, td {
+     background-color: #96D4D4;
+   }
+ h1 {text-align: center;}
+ h2 {text-align: center;}
+ h3 {text-align: center;}
+
+</style>
+
+     <h2 style="color:purple;"> Bienvenidos a la mejor página donde puedes encontrar todo accesorio de pádel.</h2>
+     <h2 style="color: purple;">Pero antes de todo, vamos a explicar qué es el pádel.</h2>
+     <br>
+     <ul>
+     <li type="circle"> <h4>El Pádel es un deporte que en los últimos años se ha consolidado en unos de los deportes más practicados y vistos en España.</h4></li>
+     <li type="circle"> <h4>Hay dos tipos de pistas en el pádel, la pista con cristales en el fondo y laterales de la pista y el otro tipo de pista es en vez de cristal son paredes de muro.</h4></li>
+    </ul>
+
+    <div class="pistas">
+      <img src="img/pista1.jpg" alt="5 Terre" style="width:100%">
+      <div class="container">
+      <p>Pista con muro</p>
+      </div>
+    </div>
+    
+    <div class="pistas">
+      <img src="img/pista2.jpg" alt="Norther Lights" style="width:100%">
+      <div class="container">
+      <p>Pista con cristal</p>
+      </div>
+    </div>
+
+    
+    <br><br>
+
+<h1 style="color: purple;"> Información sobre los mejores jugadores Masculinos y Femeninos</h1>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img/galan.jpg" style="width:100%">
+    <div class="text">Alejandro Galán Romo</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="img/lebron.jpg" style="width:100%">
+    <div class="text">Alejandro Galán Romo</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="img/gemma.jpg" style="width:100%">
+    <div class="text">Gemma Triay Pons</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="img/ale.jpg" style="width:100%">
+    <div class="text">Alejandra Salazar</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+</div>
+
+  <br><br>
+            <hr width=100% size=20 color="green">
+          <h1 style="color:purple"> Redes sociales y Número de contacto</h1>
+            <br>
+            <h2>
+          <img src="img/wassap.jpg" style="width:550px;height:150px" align="left"> Nuestro número de contacto: 693400213
+    <hr width=90% size=1 color="white">
+          <img src="img/gmail.png" style="width:550px;height:150px" align="left"> Gmail -----> padelstyle@gmail.com
+    <hr width=90% size=1 color="white">
+          <img src="img/twit.jpg" style="width:550px;height:200px" align="left"> Twitter -----> @padelstyle
+    </body>
+
+
+</html>
