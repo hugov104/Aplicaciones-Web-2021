@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="paralal.css">
+    <title>Paralelos</title>
+    <style>
+        body,html {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Los Tipos de Gatos</h1>
+    <div class="parallax"></div>
+
+<div style="height:250px;background-color:wheat;font-size:36px">
+    Scottish Fold
+    <hr width="500px" size="10px" color="blue">
+
+   <h6>El Fold escocés es una raza de gato originaria de Escocia, Reino Unido, de una estructura ósea mediana y una gran musculatura. Posee pies redondos y una cola gruesa de tamaño medio. Su cabeza es muy redondeada, con las pequeñas orejas plegadas. La nariz es chata y corta y posee unos pómulos salientes.</h6>
+</div>
+
+<div class="parallax1"></div>
+
+<div style="height:250px;background-color:wheat;font-size:36px">
+    Los Exóticos "Garfield"
+    <hr width="500px" size="10px" color="blue">
+    <h6>Garfield está inspirado en un gato éxotico. Este felino surgió de cruzar el pelicorto inglés, el gato americano de pelo corto y el gato persa en 1966 gracias a Jane Martinke, una criadora. También se realizaron hibridaciones con el azul ruso y el gato birmano.</h6>
+</div>
+
+<div class="parallax2"></div>
+
+<div style="height:250px;background-color:wheat;font-size:36px">
+    Los Bengala
+    <hr width="500px" size="10px" color="blue">
+    <h6>El bengala es una raza de gato doméstica desarrollada para parecerse a los felinos salvajes exóticos tales como son los leopardos, ocelotes, margays, etc. El gato bengala, fue un resultado fortuito del cruce casual entre un gato doméstico y una hembra gato leopardo.</h6>
+</div>
+
+<div class="parallax3"></div>
+
+<div style="height:250px;background-color:wheat;font-size:36px">
+    Los Siamés
+    <hr width="500px" size="10px" color="blue">
+    <h6>El siamés es una raza de gato. Dentro de dicha raza se distinguen dos variedades: por un lado el siamés moderno, y por otro el siamés tradicional o Thai</h6>
+</div>
+
+<div class="parallax4"></div>
+
+
+<h1 style="text-align: center;">Otra Raza de Gatos</h1>
+   
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img/coon.jpg" style="width:100%">
+    <div class="text">Los Maine Coon</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="img/esni.jpg" style="width:100%">
+    <div class="text">Los Esfinge</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="img/bomba.jpg" style="width:100%">
+    <div class="text">Los Bombay</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="img/eur.jpg" style="width:100%">
+    <div class="text">Común Europeo</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  
+</div>
+
+
+
+
+</body>
+</html>
+</body>
+</html>
