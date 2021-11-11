@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="hotel.css">
+    <title>Hotel</title>
+    <h1 style="text-align: center;">HOTEL EL CASARITO</h1>
+    <style>
+        body,html {
+            height: 100%;
+        }
+        table, th, td {
+  border:1px solid black;
+}
+{box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Información sobre las habitaciones</h1>
+    <ul>
+        <li><a class="active" href="hotel.html">Inicio</a></li>
+        <li><a href="reserva.html">Formulario de Reserva</a></li>
+        <li><a href="info.html">Formulario de Información</a></li>
+      </ul>
+    <div class="parallax"></div>
+
+<div style="height:220px;background-color:wheat;font-size:36px">
+    La Casa Ducal
+    <hr width="500px" size="10px" color="blue">
+
+   <h6>La Casa Ducal no fue sino la residencia del criado-administrador de las rentas de ducado de Alba, que conserva unas interesantes columnas de fuste prismático de indudable tradición gótica, en las que curiosos capiteles y no menos extrañas inscripciones y relieves, aluden a la Pureza, Murmuración, Sensualidad, Pereza, Gula y otras.</h6>
+</div>
+
+<div class="parallax1"></div>
+
+<div style="height:220px;background-color:wheat;font-size:36px">
+    La Ermita de San Antonio
+    <hr width="500px" size="10px" color="blue">
+    <h6>La Ermita de San Antonio está en la carretera de Salamanca junto al Tablado o la Corredera. Es pequeña con pórtico sobre columnas, con fecha de 1670 en el dintel.
+
+    </h6>
+</div>
+
+<div class="parallax2"></div>
+
+<div style="height:220px;background-color:wheat;font-size:36px">
+    La Ermita de San Blas
+    <hr width="500px" size="10px" color="blue">
+    <h6>La Ermita de San Blas en Las Heras de la carretera a Batuecas, está junto al conocido ciprés y fue reconstruida en 1813. Tiene portal, espadaña y altares colaterales de Santiago y San Marcos. Aquí se celebra del "Día del Pendón".</h6>
+</div>
+
+<div class="parallax3"></div>
+
+<div style="height:220px;background-color:wheat;font-size:36px">
+    Las Bellas Vistas
+    <hr width="500px" size="10px" color="blue">
+    <h6>El edificio está formado por planta baja, cerrada de mampostería tras el soportal y planta alta con galería de madera cubierta con tejado sobre pies derechos también de madera, con zapatas y grandes vigas siguiendo la tradicion general de la Plaza.</h6>
+</div>
+<br><br>
+
+<h1 style="text-align: center;">Precio Temporada alta y baja</h1>
+<hr width="550px" size="10px" color="red">
+
+<table style="width:100%">
+    <tr>
+      <th>Nombre del Hotel</th>
+      <th>Precio Temporada alta</th>
+      <th>Precio temporada baja</th>
+    </tr>
+    <tr>
+      <td>La Ermita de San Blas <img src="img/estrella.jpg" class="estrella"></td>
+      <td>70€ (Día completo)</td>
+      <td>45€ (Día completo)</td>
+    </tr>
+    <tr>
+      <td>Las Bellas Vistas <img src="img/estrella2.jpg" class="estrella"></td>
+      <td>180€ (Día completo)</td>
+      <td>145€ (Día completo)</td>
+    </tr>
+    <tr>
+        <td>La Casa Ducal <img src="img/estrella1.jpg" class="estrella"></td>
+        <td>55€ (Día completo)</td>
+        <td>35€ (Día completo)</td>
+      </tr>
+  </table>
+
+  <br><br>
+
+  <h1 style="text-align: center;">Gastronomia, Cultura y Paisajes de la zona</h1>
+  <hr width="850px" size="10px" color="red">
+  <br><br>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="img/zoro.jpg" style="width:100%">
+      <div class="text">El zorongollo</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="img/mila.jpg" style="width:100%">
+      <div class="text">La miel y el polen</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="img/rutas.jpg" style="width:100%">
+      <div class="text">Rutas y senderismo</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/sie.jpg" style="width:100%">
+      <div class="text">El mejor paisaje</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+    
+</body>
+</html>
