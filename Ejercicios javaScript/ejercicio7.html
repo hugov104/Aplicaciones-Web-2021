@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  
+        
+    <input type="button" id="boton1" value="boton1" onClick="action();" />
+    <input type="button" id="boton2" value="boton2" />
+
+<script>
+    var hidden = false;
+    function action() {
+        hidden = !hidden;
+        if(hidden) {
+            document.getElementById('boton1').style.visibility = 'hidden';
+        } else {
+            document.getElementById('boton2').style.visibility = 'visible';
+
+        }
+    }
+</script>
+            
+           
+
+
+</body>
+</html>
